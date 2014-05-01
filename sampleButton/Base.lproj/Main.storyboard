@@ -17,19 +17,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-3c-ZIs">
-                                <rect key="frame" x="111" y="99" width="99" height="66"/>
+                                <rect key="frame" x="34" y="122" width="99" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                <color key="tintColor" red="1" green="0.91764705879999997" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.3253089376397631" green="0.75095792269931338" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                <color key="tintColor" red="0.32530893760000001" green="0.75095792269999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="男">
-                                    <color key="titleColor" red="1" green="0.3683800672167713" blue="0.41016622517455092" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.992081782506953" blue="0.72881047688647471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.34737317078179897" green="0.97301498724489799" blue="0.049530987980671751" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <state key="selected" title="女">
-                                    <color key="titleColor" red="1" green="0.36838006719999999" blue="0.41016622520000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="selected" title="男">
+                                    <color key="titleColor" red="1" green="0.91147977600611352" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeSex:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XDc-0j-4Ph"/>
+                                    <action selector="changeSex:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rwZ-Rg-26W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVI-Tr-FMz">
+                                <rect key="frame" x="187" y="122" width="99" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.68913678298534908" blue="0.627234667460708" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="っd" label=""/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                <color key="tintColor" red="1" green="0.68913678300000003" blue="0.62723466750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="女">
+                                    <color key="titleColor" red="1" green="0.82151661831072886" blue="0.74788980994664422" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="女">
+                                    <color key="titleColor" red="1" green="0.092398209015242205" blue="0.091974323318959383" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeSex:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hEK-bg-Dpb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたの性別は○○です。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-xa-XEG">
@@ -44,7 +62,8 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="9JW-xa-XEG" id="HEh-mh-r3b"/>
-                        <outlet property="selectSex" destination="mq5-3c-ZIs" id="Pfj-XI-6K0"/>
+                        <outlet property="manButton" destination="mq5-3c-ZIs" id="WPd-4p-P3M"/>
+                        <outlet property="womanButton" destination="oVI-Tr-FMz" id="vN0-Gq-iyQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
