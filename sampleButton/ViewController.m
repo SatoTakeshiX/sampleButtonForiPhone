@@ -36,14 +36,19 @@
     
     if (sender == self.manButton) {
         self.manButton.selected = YES;
+        self.manButton.alpha = 1.0f;
+        
         self.womanButton.selected = NO;
+        self.womanButton.alpha = 0.5f;
+
         
     }else if (sender == self.womanButton){
         self.manButton.selected = NO;
+        self.manButton.alpha = 0.5f;
+        
         self.womanButton.selected = YES;
+        self.womanButton.alpha = 1.0f;
     }
     self.label.text = [NSString stringWithFormat:@"あなたの性別は%@です。",sender.titleLabel.text];
-    
-    
 }
 @end
